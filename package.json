@@ -1,0 +1,25 @@
+{
+  "scripts": {
+    "dev": "shadow-cljs watch app",
+    "postcss:build": "TAILWIND_MODE=build postcss src/dev/tailwind.css -o ./public/css/main.css --verbose && ls -S -lh ./public/css/main.css | awk '{print \"Size: \" $5}'",
+    "postcss:watch": "TAILWIND_MODE=watch postcss src/dev/tailwind.css -o ./public/css/main.css --verbose -w",
+    "postcss:release": "NODE_ENV=production postcss src/dev/tailwind.css -o ./public/css/main.css --verbose -w",
+    "release": "npm run postcss:release && shadow-cljs release app"
+  },
+  "devDependencies": {
+    "@tailwindcss/jit": "^0.1.0",
+    "autoprefixer": "^10.2.5",
+    "cssnano": "^4.1.10",
+    "postcss": "^8.2.8",
+    "postcss-cli": "^8.3.1",
+    "shadow-cljs": "^2.11.23",
+    "tailwindcss": "^2.0.3"
+  },
+  "dependencies": {
+    "@tailwindcss/forms": "^0.2.1",
+    "@headlessui/react": "^0.2.0",
+    "create-react-class": "15.6.3",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
+  }
+}

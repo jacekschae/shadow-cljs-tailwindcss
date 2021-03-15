@@ -1,0 +1,11 @@
+/.cpcache
+/public/js
+/node_modules
+/target
+/yarn.lock
+/package-lock.json
+/.shadow-cljs
+/*.iml
+/.nrepl-port
+/.idea
+shadow-cljs-tailwind.iml
