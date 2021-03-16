@@ -1,11 +1,12 @@
 {
   "scripts": {
-    "postcss:build": "TAILWIND_MODE=build postcss src/css/tailwind.css -o ./public/css/main.css --verbose && ls -S -lh ./public/css/main.css | awk '{print \"Size: \" $5}'",
-    "postcss:watch": "TAILWIND_MODE=watch postcss src/css/tailwind.css -o ./public/css/main.css --verbose -w",
-    "postcss:release": "NODE_ENV=production postcss src/css/tailwind.css -o ./public/css/main.css",
     "shadow:watch": "shadow-cljs watch app",
-    "dev": "run-p *:watch",
-    "release": "(shadow-cljs release app; npm run postcss:release)"
+    "shadow:release": "shadow-cljs release app",
+    "postcss:build": "cross-env TAILWIND_MODE=build postcss src/css/tailwind.css -o ./public/css/main.css --verbose",
+    "postcss:watch": "cross-env TAILWIND_MODE=watch postcss src/css/tailwind.css -o ./public/css/main.css --verbose",
+    "postcss:release": "cross-env NODE_ENV=production postcss src/css/tailwind.css -o ./public/css/main.css --verbose",
+    "dev": "run-p -l *:watch",
+    "release": "run-s *:release"
   },
   "devDependencies": {
     "@tailwindcss/jit": "^0.1.0",
@@ -18,9 +19,10 @@
     "tailwindcss": "^2.0.3"
   },
   "dependencies": {
-    "@tailwindcss/forms": "^0.2.1",
     "@headlessui/react": "^0.2.0",
+    "@tailwindcss/forms": "^0.2.1",
     "create-react-class": "15.6.3",
+    "cross-env": "^7.0.3",
     "react": "17.0.1",
     "react-dom": "17.0.1"
   }
