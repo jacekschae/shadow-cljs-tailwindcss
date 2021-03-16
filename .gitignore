@@ -1,9 +1,8 @@
 /.cpcache
 /public/js
+/public/css
 /node_modules
 /target
-/yarn.lock
-/package-lock.json
 /.shadow-cljs
 /*.iml
 /.nrepl-port
