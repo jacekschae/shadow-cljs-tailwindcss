@@ -19,7 +19,7 @@
     "tailwindcss": "^2.0.3"
   },
   "dependencies": {
-    "@headlessui/react": "^0.2.0",
+    "@headlessui/react": "^0.3.1",
     "@tailwindcss/forms": "^0.2.1",
     "create-react-class": "15.6.3",
     "cross-env": "^7.0.3",
