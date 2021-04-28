@@ -1,0 +1,19 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "04:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: shadow-cljs
+    versions:
+    - 2.11.24
+    - 2.11.25
+    - 2.12.2
+  - dependency-name: "@tailwindcss/jit"
+    versions:
+    - 0.1.5
+    - 0.1.7
+    - 0.1.8
