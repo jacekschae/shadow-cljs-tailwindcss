@@ -8,6 +8,7 @@ This is a example of how to setup shadow-cljs and  using [tailwindcss-jit](https
 git clone https://github.com/jacekschae/shadow-cljs-tailwindcss.git app
 cd app
 npm install
+npm run postcss:build # only once after clone to init src/css/tailwind.css
 npm run dev
 ```
 
