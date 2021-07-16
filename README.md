@@ -1,6 +1,6 @@
 # shadow-cljs + tailwindcss-jit
 
-This is a example of how to setup shadow-cljs and  using [tailwindcss-jit](https://github.com/tailwindlabs/tailwindcss-jit)
+This is an example of how to setup shadow-cljs and  using [tailwindcss-jit](https://github.com/tailwindlabs/tailwindcss-jit)
 
 ## Development
 
@@ -45,7 +45,7 @@ You can exit the REPL by either `CTRL+C` or typing `:repl/quit`.
 
 ## Release
 
-To create a release artifact run `npm run release` which will createa a js and css assests.
+To create a release artifact run `npm run release` which will create a a js and css assests.
 
 ```
 npm run release
