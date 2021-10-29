@@ -1,3 +1,5 @@
+/.clj-kondo
+/.lsp
 /.cpcache
 /public/js
 /public/css
