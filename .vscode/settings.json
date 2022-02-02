@@ -1,0 +1,10 @@
+{
+  "css.validate": false,
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "tailwindCSS.includeLanguages": {
+    "clojure": "css"
+  },
+  "tailwindCSS.experimental.classRegex": [":class\\s+\"([^\"]*)\""]
+}
