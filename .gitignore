@@ -1,6 +1,7 @@
 /.clj-kondo
 /.lsp
 /.cpcache
+/.vscode
 /public/js
 /public/css
 /node_modules
