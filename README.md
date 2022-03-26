@@ -17,13 +17,13 @@ The first startup takes a bit of time since it has to download all the dependenc
 
 ## Config 
 
-`shadow-cljs` is configured by the `shadow-cljs.edn` config and you can open shadow-cljs ui [http://localhost:9630](http://localhost:9630).
+`shadow-cljs` is configured by the `shadow-cljs.edn` config file and the UI is available at [http://localhost:9630](http://localhost:9630).
 
 `tailwindcss` is configured by the `tailwind.config.js` file.
 
-`postcss` is configured in `postcss.config.js`.
+`postcss` is configured in `postcss.config.js` file.
 
-Also checkout `npm scripts` configured in `package.json`
+Also check `npm scripts` configured in `package.json`, to understand how everything is stitched together for `dev` and `release`.
 
 ## Live reload
 
