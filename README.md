@@ -2,7 +2,7 @@
 
 This is an example of how to setup shadow-cljs and [tailwindcss](https://github.com/tailwindlabs/tailwindcss)
 
-## Development
+## Setup
 
 ```bash
 git clone https://github.com/jacekschae/shadow-cljs-tailwindcss.git app
