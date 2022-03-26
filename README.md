@@ -1,4 +1,4 @@
-# shadow-cljs + tailwindcss-css
+# shadow-cljs + tailwindcss
 
 This is an example of how to setup shadow-cljs and  using [tailwindcss](https://github.com/tailwindlabs/tailwindcss)
 
