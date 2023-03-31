@@ -15,7 +15,7 @@
     "postcss": "^8.4.20",
     "postcss-cli": "^10.1.0",
     "shadow-cljs": "^2.20.16",
-    "tailwindcss": "^3.2.4"
+    "tailwindcss": "^3.3.1"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.7",
